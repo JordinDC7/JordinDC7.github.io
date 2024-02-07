@@ -19,14 +19,14 @@
   $contact->subject = $_POST['subject'];
 
  //SMTP
-  /*
+  
   $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
+    'host' => 'smtp-relay.brevo.com',
+    'username' => 'jordincamp23@outlook.com',
+    'password' => 'Courtnie#97',
     'port' => '587'
   );
-  */
+  
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
